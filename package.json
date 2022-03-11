@@ -1,0 +1,29 @@
+{
+  "name": "employeeapp",
+  "version": "1.0.0",
+  "description": "Basic app for CRUD using Node, Mongo and Express",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deena251993/employeeapp.git"
+  },
+  "author": "Deena James Baby",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deena251993/employeeapp/issues"
+  },
+  "homepage": "https://github.com/deena251993/employeeapp#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "mongodb": "^4.4.1",
+    "mongoose": "^6.2.5",
+    "validator": "^13.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
