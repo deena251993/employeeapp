@@ -48,7 +48,7 @@ router.get('/employees/:id', async (req, res) => {
 })
 
 //UPDATE METHOD: update employee by ID
-router.patch('/employees/:id', async (req, res) => {
+router.put('/employees/:id', async (req, res) => {
     const updates = Object.keys(req.body)
     const allowedUpdates = ['name', 'email', 'password', 'age']
     const isValidOperation = updates.every((update) => allowedUpdates.includes(update))

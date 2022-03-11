@@ -12,7 +12,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"Joshua\",\r\n    \"email\": \"jai@red.com\",\r\n    \"password\": \"jose9154\"\r\n}",
+					"raw": "{\r\n    \"name\": \"Joshua\",\r\n    \"email\": \"johnjosh@red.com\",\r\n    \"password\": \"johnjosh67\",\r\n    \"age\":27\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -97,7 +97,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:3000/employees?limit=2&skip=1",
+					"raw": "localhost:3000/employees?limit=10&skip=0",
 					"host": [
 						"localhost"
 					],
@@ -108,11 +108,11 @@
 					"query": [
 						{
 							"key": "limit",
-							"value": "2"
+							"value": "10"
 						},
 						{
 							"key": "skip",
-							"value": "1"
+							"value": "0"
 						}
 					]
 				}
@@ -137,7 +137,7 @@
 					"variable": [
 						{
 							"key": "id",
-							"value": "622a80a482ac15e7f6e104dd"
+							"value": "622ad3f31679aa3b44181b0d"
 						}
 					]
 				}
@@ -188,6 +188,47 @@
 						{
 							"key": "id",
 							"value": "622a84fd82ac15e7f6e104e6"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update employee",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"jatinjoshua@red.com\",\r\n    \"password\": \"jatinjosh89\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/employees/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"employees",
+						":id"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "622ad3f31679aa3b44181b0d",
+							"disabled": true
+						}
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "622a9a271e34f10bd0642a15"
 						}
 					]
 				}
